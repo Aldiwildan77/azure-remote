@@ -9,7 +9,13 @@ const config = {
     SUBSCRIPTION_ID: process.env.SUBSCRIPTION_ID,
     BEARER_TOKEN: process.env.BEARER_TOKEN,
   },
-  PORT: process.env.PORT || 5015,
+  AAD: {
+    TENANT_ID: process.env.TENANT_ID,
+    CLIENT_ID: process.env.CLIENT_ID,
+    CLIENT_SECRET: process.env.CLIENT_SECRET,
+    RESOURCE: process.env.RESOURCE,
+  },  
+  PORT: process.env.PORT || 5015,  
 };
 
 module.exports = { ...config, NODE_ENV };
